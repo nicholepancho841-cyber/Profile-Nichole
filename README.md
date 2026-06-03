@@ -71,3 +71,4 @@ Various school projects involving presentations, documentation, design activitie
 ## 🎯 Goals
 
 🚀 To continuously learn new technologies, improve my technical and creative skills, and become a successful Information Systems professional who can contribute innovative solutions to organizations and communities.
+Ps. For more infromation or proper to look at click this link:https://nicholepancho841-cyber.github.io/Nichole-Profile/
