@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICHOLE PANCHO | Portfolio</title>
+
+```
+<style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial,sans-serif;
+        scroll-behavior:smooth;
+    }
+
+    body{
+        background:#f1f5f9;
+        color:#1e293b;
+    }
+
+    nav{
+        background:#0f172a;
+        color:white;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 8%;
+        position:fixed;
+        width:100%;
+        top:0;
+        z-index:1000;
+        box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    nav h2{
+        color:#38bdf8;
+        font-size:28px;
+    }
+
+    nav ul{
+        display:flex;
+        list-style:none;
+        gap:25px;
+    }
+
+    nav ul li a{
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    nav ul li a:hover{
+        color:#38bdf8;
+    }
+
+    .home{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        text-align:center;
+        background:linear-gradient(to right,#0f172a,#1e293b);
+        color:white;
+        padding:20px;
+    }
+
+    .profile-pic{
+        width:220px;
+        height:220px;
+        object-fit:cover;
+        border-radius:50%;
+        border:6px solid #38bdf8;
+        background:white;
+        padding:6px;
+        margin-bottom:25px;
+        box-shadow:0 0 20px rgba(56,189,248,.5);
+    }
+
+    .home h1{
+        font-size:55px;
+    }
+
+    .home h3{
+        margin-top:10px;
+        color:#38bdf8;
+        font-size:28px;
+    }
+
+    .home p{
+        margin-top:20px;
+        max-width:700px;
+        line-height:1.8;
+        font-size:18px;
+    }
+
+    .btn{
+        margin-top:30px;
+        padding:14px 35px;
+        background:#38bdf8;
+        color:white;
+        text-decoration:none;
+        border-radius:40px;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#0ea5e9;
+        transform:translateY(-3px);
+    }
+
+    section{
+        padding:100px 10%;
+    }
+
+    section h2{
+        text-align:center;
+        margin-bottom:40px;
+        color:#0f172a;
+        font-size:40px;
+    }
+
+    .about-container,
+    .contact-box{
+        background:white;
+        padding:35px;
+        border-radius:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+        line-height:1.8;
+    }
+
+    .skills{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:20px;
+    }
+
+    .skill-box{
+        background:white;
+        padding:25px;
+        text-align:center;
+        border-radius:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+        transition:0.3s;
+        font-weight:bold;
+    }
+
+    .skill-box:hover{
+        background:#38bdf8;
+        color:white;
+        transform:translateY(-8px);
+    }
+
+    .projects{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+    }
+
+    .project-box{
+        background:white;
+        padding:30px;
+        border-radius:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+        transition:0.3s;
+    }
+
+    .project-box:hover{
+        transform:translateY(-8px);
+    }
+
+    .project-box h3{
+        color:#38bdf8;
+        margin-bottom:15px;
+    }
+
+    footer{
+        background:#0f172a;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
+
+    @media(max-width:768px){
+
+        nav{
+            flex-direction:column;
+            gap:10px;
+        }
+
+        nav ul{
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .home h1{
+            font-size:38px;
+        }
+
+        .profile-pic{
+            width:170px;
+            height:170px;
+        }
+    }
+
+</style>
+```
+
+</head>
+<body>
+
+<nav>
+
+```
+<h2>N. PANCHO</h2>
+
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+```
+
+</nav>
+
+<section class="home" id="home">
+
+```
+<img src="Myprofile.png" alt="Profile Picture" class="profile-pic">
+
+<h1>NICHOLE PANCHO</h1>
+
+<h3>Information Systems Student</h3>
+
+<p>
+    Welcome to my portfolio! I'm an Information Systems student from Davao del Norte, Philippines, passionate about technology, design, and continuous learning.
+</p>
+```
+
+</section>
+
+<section id="about">
+
+```
+<h2>About Me</h2>
+
+<div class="about-container">
+
+    <p>
+        Hello! My name is <strong>Nichole Pancho</strong>, and I am currently pursuing a Bachelor of Science in Information Systems. I am passionate about technology, digital design, and developing solutions that help improve efficiency and organization.
+    </p>
+
+    <br>
+
+    <p>
+        Before entering college, I completed the ICT - Computer Systems Servicing (CSS) strand during Senior High School, where I gained foundational knowledge in computer hardware, software installation, troubleshooting, and networking.
+    </p>
+
+    <br>
+
+    <p>
+        As an Information Systems student, I continuously explore different programming languages and technologies. During my first year, I learned the fundamentals of Java programming and became interested in how systems, websites, and applications are developed.
+    </p>
+
+    <br>
+
+    <p>
+        I am always willing to gain new knowledge and improve my technical and creative skills. I am passionate about my work, eager to learn, and committed to producing quality outputs.
+    </p>
+
+    <br>
+
+    <p>
+        My goal is to continue improving my skills in system development, design, and technology while gaining valuable experiences that will help me grow professionally.
+    </p>
+
+</div>
+```
+
+</section>
+
+<section id="skills">
+
+```
+<h2>Skills</h2>
+
+<div class="skills">
+
+    <div class="skill-box">Photo Editing</div>
+    <div class="skill-box">Presentation Design</div>
+    <div class="skill-box">Canva Design</div>
+    <div class="skill-box">Documentation & Formatting</div>
+    <div class="skill-box">Basic Java Programming</div>
+    <div class="skill-box">Basic Web Design</div>
+    <div class="skill-box">Computer Troubleshooting</div>
+    <div class="skill-box">Microsoft Office Applications</div>
+    <div class="skill-box">Communication & Teamwork</div>
+
+</div>
+```
+
+</section>
+
+<section id="projects">
+
+```
+<h2>Projects</h2>
+
+<div class="projects">
+
+    <div class="project-box">
+        <h3>ReCap System</h3>
+        <p>
+            A proposed system designed to monitor capital, borrowing, repayments, and records efficiently. This project was developed to improve the management and monitoring of financial transactions.
+        </p>
+    </div>
+
+    <div class="project-box">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+            A portfolio website created in IS Elective that showcases my skills, services, projects, and personal information as a student and aspiring freelancer.
+        </p>
+    </div>
+
+    <div class="project-box">
+        <h3>Academic Projects</h3>
+        <p>
+            Various school projects involving presentations, documentation, design activities, and introductory programming exercises that enhanced my problem-solving and technical skills.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="education">
+
+```
+<h2>Education & Certifications</h2>
+
+<div class="about-container">
+
+    <p>🎓 ICT - Computer Systems Servicing (CSS) Graduate</p>
+
+    <br>
+
+    <p>🎓 Bachelor of Science in Information Systems (Current)</p>
+
+</div>
+```
+
+</section>
+
+<section id="interests">
+
+```
+<h2>Interests</h2>
+
+<div class="skills">
+
+    <div class="skill-box">Technology & Innovation</div>
+    <div class="skill-box">System Development</div>
+    <div class="skill-box">Web Design</div>
+    <div class="skill-box">Graphic Design</div>
+    <div class="skill-box">Photo Editing</div>
+    <div class="skill-box">Presentation Design</div>
+
+</div>
+```
+
+</section>
+
+<section id="hobbies">
+
+```
+<h2>Hobbies</h2>
+
+<div class="skills">
+
+    <div class="skill-box">Dancing</div>
+    <div class="skill-box">Playing Volleyball</div>
+
+</div>
+```
+
+</section>
+
+<section id="goals">
+
+```
+<h2>Goals</h2>
+
+<div class="about-container">
+
+    <p>
+        To continuously learn new technologies, improve my technical and creative skills, and become a successful Information Systems professional who can contribute innovative solutions to organizations and communities.
+    </p>
+
+</div>
+```
+
+</section>
+
+<section id="contact">
+
+```
+<h2>Contact Information</h2>
+
+<div class="contact-box">
+
+    <p><strong>Name:</strong> Nichole Pancho</p>
+    <p><strong>Course:</strong> Bachelor of Science in Information Systems</p>
+    <p><strong>Location:</strong> Davao del Norte, Philippines</p>
+
+</div>
+```
+
+</section>
+
+<footer>
+
+```
+<p>
+    © 2026 NICHOLE PANCHO | Information Systems Portfolio
+</p>
+```
+
+</footer>
+
+</body>
+</html>
