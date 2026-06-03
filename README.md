@@ -1,4 +1,4 @@
-                                                       👋 Hi there I'm Nichole Pancho
+                               👋 Hi there I'm Nichole Pancho
 
 ✨ Welcome to my portfolio! I'm an Information Systems student from Davao del Norte, Philippines, passionate about technology, design, and continuous learning.
 
