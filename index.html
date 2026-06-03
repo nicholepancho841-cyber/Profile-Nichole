@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nichole Pancho – Information Systems student from Davao del Norte, Philippines. Passionate about technology, design, and continuous learning." />
+  <meta name="keywords" content="Nichole Pancho, IS student, Information Systems, DNSC, Davao del Norte State College, portfolio, web design, Canva" />
+  <meta name="author" content="Nichole Pancho" />
+  <title>Nichole Pancho | IS Student Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Glowing Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <img src="dnsc_logo.png" alt="DNSC Logo" class="nav-dnsc-logo" />
+      <span class="nav-title">NP<span class="accent">.</span>dev</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero"       class="nav-link active" data-section="hero">Home</a></li>
+      <li><a href="#about"      class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills"     class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects"   class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#education"  class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#contact"    class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Open to Collaboration</span>
+        </div>
+        <p class="hero-greeting">
+          <span class="typing-prefix">$ ./</span><span id="typedText"></span><span class="cursor-blink">|</span>
+        </p>
+        <h1 class="hero-name">
+          Nichole<br />
+          <span class="name-highlight">Pancho</span>
+        </h1>
+        <p class="hero-tagline">
+          <span class="tag-item"><i class="fas fa-laptop-code"></i> IS Student</span>
+          <span class="tag-divider">&amp;</span>
+          <span class="tag-item"><i class="fas fa-palette"></i> Digital Designer</span>
+        </p>
+        <p class="hero-desc">
+          Pursuing a <strong>Bachelor of Science in Information Systems</strong> at
+          <strong>Davao del Norte State College</strong>, passionate about technology,
+          digital design, and developing solutions that improve efficiency.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-label">Skills</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="1">0</span>
+            <span class="stat-label">Year Exp</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-wrapper">
+          <!-- Rotating rings -->
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <!-- Floating skill badges -->
+          <div class="float-badge fb-html"><i class="fas fa-image"></i> Canva</div>
+          <div class="float-badge fb-css"><i class="fab fa-java"></i> Java</div>
+          <div class="float-badge fb-js"><i class="fas fa-globe"></i> Web</div>
+          <div class="float-badge fb-java"><i class="fas fa-tools"></i> CSS</div>
+          <!-- Profile image -->
+          <div class="profile-img-container">
+            <img src="profile-picture.png" alt="Nichole Pancho" class="profile-img" id="profileImg" />
+            <div class="profile-glow"></div>
+          </div>
+          <!-- DNSC Badge -->
+          <div class="dnsc-badge">
+            <img src="dnsc_logo.png" alt="DNSC" class="dnsc-badge-img" />
+            <span>DNSC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">&lt;about /&gt;</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <p class="section-subtitle">Get to know the person behind the screen</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="about-card-icon">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <h3>Who Am I?</h3>
+          <p>
+            Hello! I'm <strong>Nichole Pancho</strong>, currently pursuing a
+            <strong>Bachelor of Science in Information Systems</strong> at
+            <strong>Davao del Norte State College</strong>.
+          </p>
+          <p>
+            I am passionate about technology, digital design, and developing solutions
+            that help improve efficiency and organization.
+          </p>
+        </div>
+
+        <div class="about-card glass-card reveal">
+          <div class="about-card-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Academic Journey</h3>
+          <p>
+            Before entering college, I completed the <strong>ICT – Computer Systems
+            Servicing (CSS)</strong> strand during Senior High School, gaining foundational
+            knowledge in computer hardware, software installation, troubleshooting, and networking.
+          </p>
+          <p>
+            During my first year, I learned Java programming fundamentals and became
+            interested in how systems, websites, and applications are developed.
+          </p>
+        </div>
+
+        <div class="about-card glass-card reveal">
+          <div class="about-card-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>Creative Side</h3>
+          <p>
+            I have a strong passion for <strong>digital design</strong> — from photo editing and
+            Canva layouts to presentation design. I believe great technology deserves
+            equally great visuals.
+          </p>
+          <p>
+            Beyond screens, I enjoy <strong>dancing</strong> and <strong>playing volleyball</strong>,
+            which keep me energized, disciplined, and team-oriented.
+          </p>
+        </div>
+
+        <div class="about-card glass-card reveal">
+          <div class="about-card-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>My Goal</h3>
+          <p>
+            To continuously learn new technologies, improve my technical and creative skills,
+            and become a successful <strong>Information Systems professional</strong>.
+          </p>
+          <p>
+            I hope to contribute innovative solutions to organizations and communities,
+            while growing both personally and professionally in the IT field.
+          </p>
+        </div>
+      </div>
+
+      <!-- DNSC Info Card -->
+      <div class="dnsc-info-card glass-card reveal">
+        <img src="dnsc_logo.png" alt="DNSC Logo" class="dnsc-info-logo" />
+        <div class="dnsc-info-text">
+          <h3>Davao del Norte State College</h3>
+          <p>Bachelor of Science in Information Systems • First Year</p>
+          <p class="dnsc-location"><i class="fas fa-map-marker-alt"></i> Davao del Norte, Philippines</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">&lt;skills /&gt;</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <p class="section-subtitle">What I bring to the table</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal" data-skill="photo">
+          <div class="skill-icon photo-icon"><i class="fas fa-image"></i></div>
+          <h3>Photo Editing</h3>
+          <p>Visual editing &amp; digital media</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal" data-skill="canva">
+          <div class="skill-icon canva-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Canva Design</h3>
+          <p>Graphics &amp; visual content creation</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal" data-skill="pres">
+          <div class="skill-icon pres-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Presentation Design</h3>
+          <p>Engaging slides &amp; visual storytelling</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+          <span class="skill-percent">83%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal" data-skill="java">
+          <div class="skill-icon java-icon"><i class="fab fa-java"></i></div>
+          <h3>Basic Java</h3>
+          <p>OOP fundamentals &amp; programming logic</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          <span class="skill-percent">60%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal" data-skill="web">
+          <div class="skill-icon web-icon"><i class="fas fa-globe"></i></div>
+          <h3>Basic Web Design</h3>
+          <p>HTML, CSS &amp; responsive layouts</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          <span class="skill-percent">65%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal" data-skill="doc">
+          <div class="skill-icon doc-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>Documentation</h3>
+          <p>Reports, formatting &amp; MS Office</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-percent">88%</span>
+        </div>
+      </div>
+
+      <!-- Tools & Additional Skills -->
+      <div class="tools-section reveal">
+        <h3 class="tools-title">Tools &amp; Additional Skills</h3>
+        <div class="tools-grid">
+          <div class="tool-badge"><i class="fas fa-tools"></i> Computer Troubleshooting</div>
+          <div class="tool-badge"><i class="fab fa-microsoft"></i> Microsoft Office</div>
+          <div class="tool-badge"><i class="fas fa-users"></i> Communication &amp; Teamwork</div>
+          <div class="tool-badge"><i class="fas fa-network-wired"></i> Basic Networking</div>
+          <div class="tool-badge"><i class="fas fa-desktop"></i> Hardware Servicing</div>
+          <div class="tool-badge"><i class="fas fa-code"></i> VS Code</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">&lt;projects /&gt;</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <p class="section-subtitle">Things I've built and created</p>
+      </div>
+
+      <div class="projects-grid projects-grid-3">
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon recap-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-badge">Proposed System</div>
+          </div>
+          <h3 class="project-title">ReCap System</h3>
+          <p class="project-desc">
+            A proposed system designed to monitor capital, borrowing, repayments, and records
+            efficiently. Developed to help improve the management and monitoring of financial
+            transactions for better organizational control.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag"><i class="fas fa-database"></i> Database</span>
+            <span class="tech-tag"><i class="fas fa-chart-bar"></i> Finance</span>
+            <span class="tech-tag"><i class="fas fa-cogs"></i> System Design</span>
+          </div>
+          <div class="project-features">
+            <div class="feature"><i class="fas fa-check-circle"></i> Capital Monitoring</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Repayment Tracking</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Transaction Records</div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon portfolio-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="project-badge">IS Elective</div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">
+            A portfolio website created in IS Elective showcasing my skills, services, projects,
+            and personal information as a student and aspiring freelancer. Designed to reflect
+            my identity in the digital space.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+          </div>
+          <div class="project-features">
+            <div class="feature"><i class="fas fa-check-circle"></i> Skills Showcase</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Services Section</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Responsive Design</div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon academic-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <div class="project-badge">Academic</div>
+          </div>
+          <h3 class="project-title">Academic Projects</h3>
+          <p class="project-desc">
+            Various school projects involving presentations, documentation, design activities,
+            and introductory programming exercises that enhanced my problem-solving, creativity,
+            and technical skills throughout my first year.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+            <span class="tech-tag"><i class="fas fa-file-powerpoint"></i> Slides</span>
+            <span class="tech-tag"><i class="fas fa-paint-brush"></i> Canva</span>
+          </div>
+          <div class="project-features">
+            <div class="feature"><i class="fas fa-check-circle"></i> Programming Exercises</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Design Activities</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Documentation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION & ACHIEVEMENTS SECTION ==================== -->
+  <section id="education">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">&lt;education /&gt;</span>
+        <h2 class="section-title">Education &amp; <span class="accent">Achievements</span></h2>
+        <p class="section-subtitle">My journey of continuous growth</p>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="achievement-content">
+            <h3>BS Information Systems – DNSC</h3>
+            <p>Currently pursuing Bachelor of Science in Information Systems at Davao del Norte State College, building expertise in system development and technology.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+          <div class="achievement-content">
+            <h3>ICT – CSS Graduate (SHS)</h3>
+            <p>Completed the ICT Computer Systems Servicing strand in Senior High School, gaining hands-on knowledge in hardware, software, networking, and troubleshooting.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="achievement-content">
+            <h3>ReCap System – Proposed Project</h3>
+            <p>Designed a financial monitoring system for tracking capital, borrowing, and repayments, demonstrating analytical and system design capabilities.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="achievement-content">
+            <h3>Portfolio Website – IS Elective</h3>
+            <p>Created a personal portfolio website in IS Elective, showcasing skills, services, and identity as a student and aspiring professional.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon"><i class="fas fa-volleyball-ball"></i></div>
+          <div class="achievement-content">
+            <h3>Active in Sports &amp; Arts</h3>
+            <p>Passionate in dancing and playing volleyball, demonstrating discipline, teamwork, and physical wellness alongside academic and technical pursuits.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon"><i class="fas fa-leaf"></i></div>
+          <div class="achievement-content">
+            <h3>Continuous Learner</h3>
+            <p>Committed to always learning new technologies and improving both technical and creative skills — always willing to take on new challenges and grow professionally.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interests & Hobbies -->
+      <div class="interests-section reveal">
+        <h3 class="interests-title">🎯 Interests &amp; 🎨 Hobbies</h3>
+        <div class="interests-grid">
+          <div class="interest-item"><i class="fas fa-microchip"></i><span>Technology &amp; Innovation</span></div>
+          <div class="interest-item"><i class="fas fa-code"></i><span>System Development</span></div>
+          <div class="interest-item"><i class="fas fa-globe"></i><span>Web Design</span></div>
+          <div class="interest-item"><i class="fas fa-paint-brush"></i><span>Graphic Design</span></div>
+          <div class="interest-item"><i class="fas fa-image"></i><span>Photo Editing</span></div>
+          <div class="interest-item"><i class="fas fa-chalkboard"></i><span>Presentation Design</span></div>
+          <div class="interest-item"><i class="fas fa-music"></i><span>Dancing</span></div>
+          <div class="interest-item"><i class="fas fa-volleyball-ball"></i><span>Playing Volleyball</span></div>
+        </div>
+      </div>
+
+      <!-- Goals Card -->
+      <div class="goals-card glass-card reveal">
+        <div class="goals-icon"><i class="fas fa-seedling"></i></div>
+        <div class="goals-text">
+          <h3>🌱 My Goals</h3>
+          <p>
+            To continuously learn new technologies, improve my technical and creative skills,
+            and become a successful <strong>Information Systems professional</strong> who can
+            contribute innovative solutions to organizations and communities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">&lt;contact /&gt;</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <p class="section-subtitle">Let's connect and build something amazing!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info glass-card reveal">
+          <h3>Let's Connect!</h3>
+          <p>
+            Whether you have a project idea, want to collaborate, or just want to say hi —
+            I'm always open to connecting with like-minded people. I'm eager to learn,
+            grow, and work with amazing people!
+          </p>
+
+          <div class="contact-links">
+            <div class="contact-link" id="locationLink">
+              <div class="contact-link-icon loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-link-label">Location</span>
+                <span class="contact-link-val">Davao del Norte, Philippines</span>
+              </div>
+            </div>
+
+            <div class="contact-link" id="schoolLink">
+              <div class="contact-link-icon school-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <span class="contact-link-label">School</span>
+                <span class="contact-link-val">Davao del Norte State College</span>
+              </div>
+            </div>
+
+            <div class="contact-link" id="programLink">
+              <div class="contact-link-icon prog-icon"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <span class="contact-link-label">Program</span>
+                <span class="contact-link-val">BS Information Systems</span>
+              </div>
+            </div>
+
+            <div class="contact-link" id="strandLink">
+              <div class="contact-link-icon strand-icon"><i class="fas fa-tools"></i></div>
+              <div>
+                <span class="contact-link-label">SHS Strand</span>
+                <span class="contact-link-val">ICT – Computer Systems Servicing (CSS)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glass-card reveal">
+          <h3>Send a Message</h3>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" placeholder="e.g. Juan dela Cruz" required />
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" placeholder="e.g. you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="msgSubject">Subject</label>
+              <input type="text" id="msgSubject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="msgBody">Message</label>
+              <textarea id="msgBody" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="sendMsgBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="dnsc_logo.png" alt="DNSC Logo" class="footer-dnsc" />
+        <div>
+          <h3 class="footer-name">Nichole Pancho</h3>
+          <p class="footer-tagline">IS Student • Digital Designer • DNSC</p>
+        </div>
+      </div>
+      <p class="footer-copy">
+        © 2025 Nichole Pancho. Crafted with <span class="heart">❤️</span> and lots of <span class="coffee"><i class="fas fa-coffee"></i></span>
+      </p>
+      <div class="footer-socials">
+        <a href="#contact" id="footerContact" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+        <a href="#projects" id="footerProjects" aria-label="Projects"><i class="fas fa-briefcase"></i></a>
+        <a href="#skills" id="footerSkills" aria-label="Skills"><i class="fas fa-code"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
